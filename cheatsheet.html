@@ -1,0 +1,244 @@
+<h1>The p Tag and Inline Formatting</h1>
+
+<p>Hello, World!</p> <!-- The <p> tag indicates that the enclosed text should be treated as a separate paragraph, with a blank line inserted above and below the text. -->
+
+<h1>Formatting Text with Inline Tags</h1>
+<h2>The strong tag</h2>
+
+<p>This is some <strong>important</strong> text.</p> <!-- The <strong> tag is used to make the enclosed text bold.-->
+
+<h2>The emphasis tag</h2>
+
+<p>This is some text that requires <em>emphasis</em>.</p> <!-- The <em> tag is used to make the enclosed text italic.-->
+
+<h2>The underline tag</h2>
+
+<p>This is some text that needs to be <u>underlined</u>.</p> <!-- The <u> tag is used to underline the enclosed text.-->
+
+<h2>The sup tag</h2>
+
+<p>1<sup>st</sup>, 2<sup>nd</sup>, and 3<sup>rd</sup></p> <!-- The <sup> tag is used to make the enclosed text superscript (slightly above the regular text).-->
+
+<h2>The sub tag</h2>
+
+<p>The chemical formula for water is H<sub>2</sub>O.</p> <!-- The <sub> tag is used to make the enclosed text subscript (slightly below the regular text).-->
+
+<h2>The delete tag</h2>
+
+<p>Special Price: <del>$100</del> $75.</p> <!-- The <del> tag is used to strike through text-->
+
+<h2>The mark tag</h2>
+
+<p>The deadline for submitting the report is <mark>Monday, March 12th</mark>.</p> <!-- The <mark> tag is used to highlight text with a background color-->
+
+<h1>Quotations: the q and blockquote Tags</h1>
+<h2>The q tag</h2>
+
+<p><q>The only way to do great work is to love what you do.</q> - Steve Jobs</p> <!-- The <q> tag is used for short, inline quotes -->
+
+<h2>The blockquote tag</h2>
+
+<p>As Albert Einstein once said:</p>
+<blockquote>
+  <p>"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. The true sign of intelligence is not knowledge but imagination."</p>
+</blockquote>
+<p>This quote speaks to the idea that creativity and original thinking are more important than simply accumulating knowledge. It suggests that being able to see beyond what is already known and to imagine new possibilities is a key characteristic of intelligence.</p>
+<!-- The <blockquote> tag is used for longer, block quotes. -->
+
+<h1>The cite Tag</h1>
+
+<p>I recently read <cite>The Great Gatsby</cite> by F. Scott Fitzgerald.</p> <!-- When you want to mark up the title or source of a book, film, song, or any other creative work, provide attribution or credit for an idea or information, or indicate a reference to another source, you can use the <cite> element.-->
+
+<h2>The cite Attribute</h2>
+
+<p>As Steve Jobs once said, <q cite="https://www.brainyquote.com/quotes/steve_jobs_416096">Innovation distinguishes between a leader and a follower.</q></p> <!-- When using quotes, it's important to attribute the source of the quote, typically by providing a URL. One way to do this is with the <cite> attribute, which you can use inside a <q> tag to specify the source of the quote.-->
+
+<h1>The footer Tag</h1>
+
+<blockquote>
+<p>The more that you read, the more things you will know. The more that you learn, the more places you'll go.</p>
+<footer>- Dr. Seuss</footer>
+</blockquote> <!-- Another way to provide more context for a quotation is to use the <footer> tag, which is a semantic tag that helps search engines and screen readers understand the content of the page.-->
+
+<h1>Line Breaks and Horizontal Rules</h1>
+<h2>Line Breaks</h2>
+
+<p>This is the first line.<br>This is the second line.</p> <!-- To add a line break, insert the <br> tag wherever you want to create a new line of text. It's important to note that the <br> tag is an empty element, meaning it doesn't require a closing tag.-->
+
+<h2>Horizontal Rules</h2>
+
+<p>This is some text above the line.</p>
+<hr>
+<p>This is some text below the line.</p>
+<!-- To add a horizontal rule, insert the <hr> tag wherever you want to add a line. The <hr> element is self-closing and does not require a closing tag.-->
+
+<h1>What are HTML Lists</h1>
+<h2>Unordered Lists</h2>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul> <!-- Unordered lists are created with the <ul> tag, and are used to display a list of items with no particular order. -->
+
+<h2>Ordered Lists</h2>
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol> <!-- Ordered lists are created with the <ol> tag, and are used to display a list of items in a specific order.-->
+
+<h2>Definition Lists</h2>
+
+<dl>
+  <dt>Term 1</dt>
+  <dd>Definition 1</dd>
+  <dt>Term 2</dt>
+  <dd>Definition 2</dd>
+  <dt>Term 3</dt>
+  <dd>Definition 3</dd>
+</dl> <!-- Definition lists are created with the <dl> tag, and are used to display a list of terms and their definitions.-->
+
+<h2>Nested Lists</h2>
+
+<ul>
+  <li>First item</li>
+  <li>Second item
+    <ul>
+      <li>Sub-item 1</li>
+      <li>Sub-item 2</li>
+    </ul>
+  </li>
+  <li>Third item</li>
+</ul> <!-- To create a nested list, simply place a new <ul> or <ol> element within an existing <li> element.-->
+
+<h1>What are HTML Tables</h1>
+<h2>Creating a Basic Table</h2>
+
+<table>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+</table> <!-- To create a basic table, you need to use three elements: <table>, <tr>, and <td>-->
+
+<h2>Adding Headers</h2>
+
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Web design</td>
+    <td>$500</td>
+  </tr>
+  <tr>
+    <td>Graphic design</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Content writing</td>
+    <td>$200</td>
+  </tr>
+  <tr>
+    <td>Social media management</td>
+    <td>$150</td>
+  </tr>
+</table> <!-- You can also add header rows to your table using the <th> element.-->
+
+<h2>Merging Cells</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Product</th>
+    <th colspan="2">Price</th>
+  </tr>
+  <tr>
+    <th>Old</th>
+    <th>New</th>
+  </tr>
+  <tr>
+    <td>Product 1</td>
+    <td>$10.00</td>
+    <td>$12.00</td>
+  </tr>
+  <tr>
+    <td>Product 2</td>
+    <td>$15.00</td>
+    <td>$18.00</td>
+  </tr>
+</table> <!-- You can merge cells in a table using the colspan and rowspan attributes. The colspan attribute specifies how many columns a cell should span (merges cells horizontally), while the rowspan attribute specifies how many rows a cell should span (merges cells vertically).-->
+
+<h2>The caption Element</h2>
+
+<table>
+  <caption>Product Prices</caption>
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Product 1</td>
+    <td>$10.00</td>
+  </tr>
+  <tr>
+    <td>Product 2</td>
+    <td>$15.00</td>
+  </tr>
+</table> <!-- The <caption> element is used to add a title or caption to an HTML table.-->
+
+<h2>The table Tag and Its Attributes</h2>
+
+<table border="1" cellspacing="10" cellpadding="5" width="80%" height="200" align="center" bgcolor="#f2f2f2">
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Product 1</td>
+    <td>$10.00</td>
+  </tr>
+  <tr>
+    <td>Product 2</td>
+    <td>$15.00</td>
+  </tr>
+</table> <!-- The <table> tag in HTML has some attributes you can use to change how tables appear. You can add these attributes to the opening <table> tag, and they let you control things like the size and layout of the table, as well as the color and border style of the cells.-->
+
+<h2>Other Table-Specific Attributes</h2>
+
+<table>
+  <caption>Monthly Sales</caption>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Sales</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$10,000</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$12,000</td>
+    </tr>
+    <tr>
+      <td>March</td>
+      <td>$15,000</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>$37,000</td>
+    </tr>
+  </tfoot>
+  <summary>This table shows the monthly sales figures for the first quarter of the year.</summary>
+</table> <!-- Along with commonly used, though deprecated, attributes such as border, cellpadding, and cellspacing, there is another attribute that plays an essential role in improving the user experience. -->
