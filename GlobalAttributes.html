@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-</head>
     <style>
-      p {
+      #unique-style
+       {
         font-size: 20px;
         color: blue;
       }
+      .common-style {
+        background-color: yellow;
+        text-align: center;
+      }
     </style>
+</head>
 
 <body>
-    <p>This paragraph will have a unique style applied to it.</p>
+    <p id="unique-style">This paragraph will have a unique style applied to it.</p>
+    <br>
+    <p class="common-style">This paragraph is styled by a class.</p>
+    <p>This paragraph is NOT styled by a class</p>
+    <button title="Click me for more information">Hover over me!</button>
 
 </body>
 </html>
